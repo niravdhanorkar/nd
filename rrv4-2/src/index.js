@@ -2,11 +2,12 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import {
+  // Redirect,
   BrowserRouter, 
   NavLink,
   Switch,
   Route,
-  Prompt
+  Prompt  
 } from 'react-router-dom';
 
 
@@ -47,6 +48,9 @@ const MainContaint = () => {
       <Route path='/contact' component={Contact}/>
       <Route path='/nested' component={Nested}/>
       <Route render={()=>  <h1>Not Found</h1>} /> 
+      
+      {/*<Route render={()=>  <Redirect to='/' />} /> */}
+
     </Switch>
   )
 }

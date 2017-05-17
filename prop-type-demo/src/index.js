@@ -22,7 +22,7 @@ PropTypeString.propTypes = {
 //Rendering
 ReactDOM.render(
     // <PropTypeDemo />,
-    <PropTypeString id={"11"} name={"nirav"} obj={{a:1,b:'22'}} objArr={[1,2,3]}  />,
+    <PropTypeString id={"11"}  obj={{a:1,b:'22'}} objArr={[1,2,3]}  />,
      document.getElementById("root")
 );
 

@@ -1,6 +1,8 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';;
 import './index.css';
+import $ from 'jquery';
+import 'fullcalendar';
 
 
 class FormDemo extends React.Component {
@@ -23,6 +25,14 @@ class FormDemo extends React.Component {
     this.submitForm =  this.submitForm.bind(this);
   }
 
+  componentDidMount(){
+    $("#cal").fullCalendar({
+        dayClick: function() {
+            alert('a day has been clicked!');
+        }
+      });
+  }
+
   handleInputChange(event) {
       const target = event.target;
       const value = (target.type === 'checkbox') ? target.checked : target.value;
@@ -32,6 +42,12 @@ class FormDemo extends React.Component {
        this.setState({
          [name]: value
        });
+
+       //es5
+      //  var obj={};
+      //  obj[name] =value;
+      //  this.setState(obj);
+
   }
 
   submitForm(e){
@@ -143,6 +159,9 @@ class FormDemo extends React.Component {
                   <input type='submit' value='submit' />        
               </div>
         </div>
+
+        <div  id="cal">
+          </div>
 
       </form>
     </div>

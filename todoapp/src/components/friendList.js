@@ -10,15 +10,13 @@ class FriendList extends Component{
         }   
     }
     
-    componentDidMount(){
+    componentWillMount(){
         this.setState({
             data
-        });
-        
+        });        
     }
 
     render(){
-
         return(
             <div className="box">
                     {
