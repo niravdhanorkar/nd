@@ -1,0 +1,20 @@
+.box{
+  background-color: ccc;
+  width:500px;
+  margin: auto;
+}
+
+.inner-box{
+  background-color: #fff;
+  border:3px solid #ccf;  
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.blue-font{
+  color: blue;
+}
+
+.gray-font{
+  color: gray;
+}
