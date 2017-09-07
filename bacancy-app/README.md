@@ -1,14 +1,20 @@
 
+To run in local:
+===============
+clone source, open console and reach to that folder, 
+do "npm update",
+open url in Chrome browser:	http://localhost:3000
+
 ====================
 Created and tested app in Google Crome browser:
 
 Technologies used:
 =================
 
-react
-react-router v4
-redux
-data stored in html5 localstorage.
+react, 
+react-router v4, 
+redux, 
+data stored in html5 localstorage, 
 bootstrap 
 
 App defination:
