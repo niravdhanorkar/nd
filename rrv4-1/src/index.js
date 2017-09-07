@@ -33,12 +33,16 @@ const BasicExample = () => (
 const Home = () => (
   <div>
     <h2>Home</h2>
+    <Link to="/about">go to About</Link>
   </div>
 )
 
 const About = () => (
   <div>
     <h2>About</h2>
+    <Link to="/"> &lt; &lt; Back Home</Link>
+    &nbsp;&nbsp;&nbsp;
+    <Link to="/topics">Next topic &gt; &gt;</Link>
   </div>
 )
 
@@ -46,6 +50,9 @@ const Topics = () => {
   return(
     <div>
       <h2>Topics</h2>
+      <Link to="/about">&lt;&lt; Back About</Link>
+      &nbsp;&nbsp;&nbsp;
+      <Link to="/"> Finish &gt;&gt;</Link>
     </div>
   )
 }

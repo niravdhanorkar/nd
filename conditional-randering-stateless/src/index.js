@@ -127,7 +127,7 @@ function Mailbox(props) {
   );
 }
 
-const messages = ['React', 'Angular' ];
+const messages = ['React', 'Angular', 'RequiredJS' ];
 ReactDOM.render(
   <Mailbox unreadMessages={messages} />,
   document.getElementById('root')
