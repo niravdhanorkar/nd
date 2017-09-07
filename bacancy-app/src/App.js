@@ -9,6 +9,7 @@ import ShowAllInfo from './components/ShowAllInfo';
 import Profile from './components/Profile'
 import Home from './components/Home';
 
+//declare all the route for application
 class App extends Component {
   render() {
     return (

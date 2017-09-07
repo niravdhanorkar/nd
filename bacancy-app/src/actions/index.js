@@ -1,3 +1,4 @@
+//declare and export constant 
 export const LOGIN = "LOGIN";
 export const LOGOUT= "LOGOUT";
 export const ADD_PROFILE_DATA = "ADD_PROFILE_DATA";
@@ -6,6 +7,7 @@ export const UPLOAD_IMAGE = "UPLOAD_IMAGE";
 export const SAVE_DATA="SAVE_DATA";
 export const EMPTY_SIGNUP = 'EMPTY_SIGNUP';
 
+//action creation
 export function doLogin(email, password) {
     const action = {
         type: LOGIN,

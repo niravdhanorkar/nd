@@ -1,14 +1,14 @@
+//importing required 
 import React, { Component } from 'react';
 import { Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { doLogout } from '../actions';
-import {
-    Link
-  } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
+//component
 class Home extends Component {
     render() {
-        if(!this.props.doneLogin){            
+        if (!this.props.doneLogin) {
             this.props.history.push("/login");
         }
         return (
@@ -19,19 +19,17 @@ class Home extends Component {
                     onClick={() => this.props.doLogout(false)}
                 >LOGOUT</Button>
                 <h1 > Home </h1>
-                
+
                 <Link to="/showprofile">Show Profile</Link>
             </div>
         );
-
     }
 }
 function mapStateToProps(state) {
     return {
         doneLogin: state.login.doneLogin,
-        fname : state.profile.fname,
-        lname : state.profile.lname
-
+        fname: state.profile.fname,
+        lname: state.profile.lname
     }
 }
 export default connect(mapStateToProps, { doLogout })(Home);

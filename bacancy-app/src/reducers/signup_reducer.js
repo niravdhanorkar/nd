@@ -1,6 +1,8 @@
 import { ADD_PROFILE_DATA, ADD_LOGIN_DATA, UPLOAD_IMAGE, SAVE_DATA, EMPTY_SIGNUP } from '../actions';
 
+
 export default function signup(state = { fname: '', lname: '', email: '', password: '', image: '' }, action) {
+    //switch cases for different signup steps, return new state
     switch (action.type) {
         case ADD_PROFILE_DATA:
             let newState = Object.assign({}, state, { 'fname': action.fname, 'lname': action.lname })
@@ -24,7 +26,7 @@ export default function signup(state = { fname: '', lname: '', email: '', passwo
             newState = Object.assign({}, {}, { "profileCreated": true });
             return newState;
         case EMPTY_SIGNUP:
-            return  { fname: '', lname: '', email: '', password: '', image: '' };
+            return { fname: '', lname: '', email: '', password: '', image: '' };
         default:
             return state;
     }

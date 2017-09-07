@@ -4,8 +4,6 @@ import { Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { addLoginData } from '../actions';
 
-
-
 class LoginDetails extends Component {
   render() {
 

@@ -1,7 +1,7 @@
 import { LOGIN, LOGOUT } from '../actions';
 export default function profile(state = {}, action) {
     switch (action.type) {
-        case LOGIN:        
+        case LOGIN:
             if (!state) {
                 return {};
             }

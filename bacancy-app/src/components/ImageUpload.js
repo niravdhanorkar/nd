@@ -10,7 +10,7 @@ class ImageUpload extends Component {
     super(props);
     this.state = { file: '', imagePreviewUrl: '' };
   }
-
+//call when file upload
   _handleImageChange(e) {
     e.preventDefault();
 
@@ -49,14 +49,14 @@ class ImageUpload extends Component {
 
         <Button
           bsStyle='primary'
-         onClick={() => this.props.uploadImageData("image_1")}
-          //onClick={() => this.props.uploadImageData(this.state.imagePreviewUrl)}
+          onClick={() => this.props.uploadImageData("image_1")}
+        //onClick={() => this.props.uploadImageData(this.state.imagePreviewUrl)}
         >Save and Next &gt;&gt; </Button>
 
         <div className="imgPreview">
           {$imagePreview}
         </div>
-                
+
       </div>
     )
   }

@@ -1,9 +1,9 @@
+//importing
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { doLogin } from '../actions';
 import { Button } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
-
 
 class Login extends Component {
     render() {               
