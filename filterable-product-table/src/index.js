@@ -14,12 +14,10 @@ var PRODUCTS = [
 
 
 // rendering two times component..
-
 ReactDOM.render(
   <FilterableProductTable products={PRODUCTS} />,
   document.getElementById('container')
 );
-
 
 ReactDOM.render(
   <FilterableProductTable products={PRODUCTS} />,

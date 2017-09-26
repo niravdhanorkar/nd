@@ -17,7 +17,7 @@ class DemoRoute extends Component{
     return(
       <BrowserRouter>
         <div>
-          <Links  />
+          <Links />
           <div className="col-sm-8">
             <MainContaint />
           </div>

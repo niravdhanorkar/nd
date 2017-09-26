@@ -18,7 +18,8 @@ class FetchData extends Component{
   componentWillMount(){
     console.log("CWM");
     
-    fetch("https://rallycoding.herokuapp.com/api/music_albums").then( (response) => {
+    fetch("https://rallycoding.herokuapp.com/api/music_albums")
+    .then( (response) => {
       return response.json();           
     }).then((data) => {
       this.setState({
