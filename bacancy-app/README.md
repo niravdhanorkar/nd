@@ -5,12 +5,11 @@ clone source, open console and reach to that folder,
 do "npm update",
 open url in Chrome browser:	http://localhost:3000
 
-====================
 Created and tested app in Google Crome browser:
+====================
 
 Technologies used:
 =================
-
 react, 
 react-router v4, 
 redux, 
@@ -34,7 +33,6 @@ On Home page
 
 some features added:
 ===================
-
 -if you enter home page without login , you will redirect to Login page.	
 first of all user need to signup 
 - where 4 steps user have to complet to signup.
@@ -49,7 +47,6 @@ state management - redux
 component creation - react
 some UI - bootstrap
 others: html, css
-
 
 some points note:
 =================
